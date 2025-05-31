@@ -97,7 +97,7 @@ async def slots_handler(message: types.Message):
     if result[0] == result[1] == result[2]:
         win = 200
         update_balance(message.from_user.id, win)
-        await message.answer(f"{msg}
+        await message.answer(f"{msg}")
 🎉 Виграш: +{win} фішок!")
     else:
         loss = -50
